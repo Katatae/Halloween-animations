@@ -1,0 +1,96 @@
+
+.head{
+    color: white;
+    text-align: center;
+    padding: 3rem;
+}
+p {
+    color: white;
+    text-align: center;
+}
+body{
+background: black;
+}
+.cards {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.ghost {
+    height: 300px;
+    border-radius: 20px;
+    background: rgb(145, 206, 55);
+}
+.ghost img {
+    height: 260px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.lantern{
+    height: 300px;
+    border-radius: 20px;
+    background:rgb(145, 206, 55);
+}
+.lantern:hover {
+    transform: scale(1.1);
+}
+.lantern img{
+    height: 260px;
+    animation: fade 3s ease-in infinite;
+}
+
+.pumpkin {
+    height: 300px;
+    border-radius: 20px;
+    background:rgb(145, 206, 55);
+}
+.pumpkin img{
+    height: 260px;
+    animation: tilt 3s infinite;
+}
+
+.candy{
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+.butt {
+    background: purple;
+    color: white;
+    padding: 1rem 2rem;
+    align-content: center;
+    border-color: rgb(145, 206, 55);
+    border-radius: 15px;
+    border-style: dashed;
+}
+.butt:hover {
+   animation: spin 1s linear infinite;
+   cursor: pointer;
+}
+
+
+@keyframes float {
+ 0%{ transform: translateY(0)}
+ 50%{ transform: translateY(-22px)}
+ 100%{ transform: translateY(0)}
+}
+
+@keyframes fade {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes tilt {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(10deg);}
+    100% {transform: rotate(0deg);}
+}
+
+@keyframes spin {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
